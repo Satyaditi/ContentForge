@@ -1,0 +1,50 @@
+Prompt for Multilingual Marketing Content Platform
+Objective: Create a single-page web application using React that serves as a powerful tool for generating multilingual marketing content. The application will allow users to select a target language, content type, and tone, then generate compelling text content using a generative AI model.
+
+Tech Stack:
+
+Frontend: React (functional components and hooks)
+
+Styling: Tailwind CSS for a modern, responsive, and mobile-first design.
+
+AI Integration: Use the Gemini API, specifically the gemini-2.5-flash-preview-05-20 model, to generate the marketing content.
+
+Application Flow & UI:
+
+Header: The page should have a prominent, centered title, such as "AI Marketing Content Platform."
+
+Input Controls: Create a clean and organized section with four distinct input elements. Each should have a clear label.
+
+Language Selection: A dropdown menu with the title "Select Language." Populate it with a diverse list of languages, including several Indian languages (e.g., English, Hindi, Spanish, French, Punjabi, Tamil, Bengali).
+
+Content Type: A second dropdown titled "Select Content Type." Options should be specific to marketing, such as "Social Media Post," "Poster Headline," "Ad Copy," and "Email Newsletter."
+
+Tone Selection: A third dropdown labeled "Select Tone." This will give the AI a directive on the style. Options should include "Professional," "Casual," "Witty," "Inspirational," and "Formal."
+
+Prompt Input: A large text area with the title "Your Content Idea." The user will enter the core topic or message here.
+
+Action Button: A prominent button labeled "Generate Content" should be placed below the input fields. This button will initiate the API call.
+
+Loading State: When the "Generate Content" button is clicked, disable the button and display a loading indicator to inform the user that the request is being processed.
+
+Output Display: An output card or display area should appear below the button, titled "Generated Content." This area will display the AI's response in a readable format, with appropriate spacing and line breaks.
+
+API Integration:
+
+The application should use an asynchronous function to handle the API call.
+
+The function will construct a detailed prompt for the AI model by combining the user's selections for language, content type, tone, and their core idea.
+
+The final prompt should be a clear instruction, such as: "Generate a [Content Type] in a [Tone] tone, using the [Language] language, based on this idea: [User's Idea]."
+
+Implement robust error handling to display a user-friendly message if the API call fails or an empty response is received.
+
+Use the provided Gemini API fetch call structure with the gemini-2.5-flash-preview-05-20 model.
+
+Styling Requirements:
+
+The design should be modern, clean, and minimalist, with a focus on usability.
+
+Ensure the layout is fully responsive and looks great on all devices and screen sizes.
+
+Use Tailwind CSS to style all elements, including rounded corners on buttons and input fields, and consistent color schemes.
